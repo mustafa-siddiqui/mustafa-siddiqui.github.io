@@ -1,0 +1,17 @@
+/*
+    @file   style.css
+
+            Specify the stylistic components of the webpage using CSS.
+
+    @author Mustafa Siddiqui
+*/
+
+html {
+    font-size: 10px;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+h1 {
+    font-size: 60px;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
