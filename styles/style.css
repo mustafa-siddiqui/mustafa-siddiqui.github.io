@@ -80,7 +80,7 @@ h3 {
     height: auto;
     border: double transparent;
     border-radius: 50%;
-    padding-left: 15%;
+    margin-left: 50px;
 }
 
 /* text beside picture */
