@@ -13,6 +13,10 @@ html {
     font-weight: 200;
 }
 
+body {
+    background-color: #e6e6fa;
+}
+
 h2 {
     font-size: 50px;
 }
@@ -26,8 +30,8 @@ h3 {
     list-style-type: none;
     margin: 0;
     padding: 0.25%;
+    padding-top: 10px;
     overflow: hidden;
-    /* border: 1px solid #e7e7e7; */
     background-color: black;
 }
 
@@ -42,7 +46,6 @@ h3 {
     font-size: 20px;
     text-align: center;
     text-decoration: none;
-    margin: 0;
     padding: 20px;
     border-radius: 3px;
 }
@@ -65,7 +68,7 @@ h3 {
     font-size: 50px;
     font-weight: lighter;
     padding: 0%;
-    padding-left: 50px;
+    margin-left: 50px;
 }
 
 /* no viewable action when hovered over name */
@@ -101,35 +104,22 @@ p {
     padding-top: 4%;
 }
 
-body {
-    background-color: #e6e6fa;
+footer {
+    text-align: center;
+    border-top: solid black 1px;
+    border-top-style: groove;
+    border-top-color: rgb(70, 69, 69);
+    border-top-width: thin;
 }
 
-/* Junk afterwards */
-/*
-
-h1 {
-    font-size: 60px;
-    font-family: 'Open Sans Condensed', sans-serif;
-    margin: 0;
-    padding: 20px 0;
-    color: black;
+footer p {
+    margin-top: 3px;
+    font-size: 8px;
+    color: rgb(70, 69, 69);
+    letter-spacing: 1px
 }
 
-body {
-    width: calc(95% - 10px);
-    margin: auto;
-    margin-top: 2%;
-    background-color: #f1faee;
-    color: black;
-    padding: 0 20px 20px 20px;  // for text inside the body (padding from border)
-    border: 2px solid black;
+footer a {
+    text-decoration: none;
+    color: rgb(70, 69, 69);
 }
-
-/*
-    For seeing different elements.
-
-* {
-    border: 1px solid red;
-}
-*/
