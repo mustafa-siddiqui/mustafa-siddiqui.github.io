@@ -61,6 +61,7 @@ h3 {
     left:0;
     width: 100%;
     display: inline;
+    border: none;
 }
 
 #name {
@@ -76,6 +77,13 @@ h3 {
     background-color: transparent;
 }
 
+#home {
+    font-family: 'News Cycle', sans-serif;
+    text-align: center;
+    padding-top: 4%;
+    margin-top: 4%;
+}
+
 /* picture of myself */
 #me {
     object-position: left;
@@ -87,9 +95,32 @@ h3 {
 }
 
 /* text beside picture */
-#about-me-text {
+.text-beside-picture {
     padding-left: 30%;
     padding-right: 10%;
+}
+
+#social-links {
+    width: 310px;
+    height: auto;
+    margin: 0px;
+    margin-left: 50px;
+    border-top: solid 1px black;
+}
+
+#social-links i {
+    object-position: center;
+    padding: 0 2.5px 0;
+    margin-left: 55px;
+}
+
+#social-links a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#social-links a:hover {
+    color: gray;
 }
 
 p {
@@ -98,10 +129,9 @@ p {
     letter-spacing: 1px;
 }
 
-#home {
-    font-family: 'News Cycle', sans-serif;
-    text-align: center;
-    padding-top: 4%;
+#work-with {
+    margin-top: 0px;
+    padding-top: 0px;
 }
 
 footer {
@@ -110,10 +140,14 @@ footer {
     border-top-style: groove;
     border-top-color: rgb(70, 69, 69);
     border-top-width: thin;
+    padding: 0px;
+    margin: 0px;
 }
 
 footer p {
     margin-top: 3px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
     font-size: 8px;
     color: rgb(70, 69, 69);
     letter-spacing: 1px
@@ -122,4 +156,11 @@ footer p {
 footer a {
     text-decoration: none;
     color: rgb(70, 69, 69);
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+* {
+    /* border: solid 1px red; */
+    /* border: solid 1px transparent */
 }
