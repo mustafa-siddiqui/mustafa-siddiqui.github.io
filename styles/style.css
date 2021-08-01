@@ -15,6 +15,7 @@ html {
 
 body {
     background-color: #e6e6fa;
+    margin-bottom: 0;
 }
 
 h2 {
@@ -23,6 +24,12 @@ h2 {
 
 h3 {
     font-size: 30px;
+}
+
+p {
+    font-size: 20px;
+    line-height: 1.25;
+    letter-spacing: 1px;
 }
 
 /* top navigation bar */
@@ -81,7 +88,7 @@ h3 {
     font-family: 'News Cycle', sans-serif;
     text-align: center;
     padding-top: 4%;
-    margin-top: 4%;
+    margin-top: 5%;
 }
 
 /* picture of myself */
@@ -92,12 +99,22 @@ h3 {
     border: double transparent;
     border-radius: 50%;
     margin-left: 50px;
+    margin-top: 50px;
 }
 
 /* text beside picture */
 .text-beside-picture {
     padding-left: 30%;
     padding-right: 10%;
+}
+
+.click-links {
+    text-decoration: none;
+    color: inherit;
+}
+
+.click-links:hover {
+    color: gray;
 }
 
 #social-links {
@@ -112,6 +129,7 @@ h3 {
     object-position: center;
     padding: 0 2.5px 0;
     margin-left: 55px;
+    margin-top: 10px;
 }
 
 #social-links a {
@@ -123,15 +141,13 @@ h3 {
     color: gray;
 }
 
-p {
-    font-size: 20px;
-    line-height: 1.25;
-    letter-spacing: 1px;
-}
-
 #work-with {
     margin-top: 0px;
     padding-top: 0px;
+}
+
+#non-work-interests a:hover {
+    text-transform: uppercase;
 }
 
 footer {
@@ -145,12 +161,12 @@ footer {
 }
 
 footer p {
-    margin-top: 3px;
+    margin-top: 2px;
     padding-bottom: 0px;
     margin-bottom: 0px;
-    font-size: 8px;
+    font-size: 10px;
     color: rgb(70, 69, 69);
-    letter-spacing: 1px
+    letter-spacing: normal;
 }
 
 footer a {
@@ -161,6 +177,6 @@ footer a {
 }
 
 * {
-    /* border: solid 1px red; */
-    /* border: solid 1px transparent */
+    border: solid 1px red;
+    border: solid 1px transparent
 }
