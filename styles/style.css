@@ -130,6 +130,11 @@ p {
 .text-beside-picture {
     padding-left: 30%;
     padding-right: 10%;
+    border: solid 1px transparent;
+}
+
+#about-me {
+    margin-top: 5%;
 }
 
 .click-links {
@@ -150,7 +155,6 @@ p {
 }
 
 #social-links i {
-    object-position: center;
     padding: 0 2.5px 0;
     margin-left: 55px;
     margin-top: 10px;
