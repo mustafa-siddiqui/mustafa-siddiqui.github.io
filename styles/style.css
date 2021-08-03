@@ -174,11 +174,17 @@ p {
     padding-top: 0px;
 }
 
+#work-with-heading {
+    margin-top: 0px;
+    padding-top: 0px;
+}
+
 #non-work-interests a:hover {
     text-transform: uppercase;
 }
 
 footer {
+    object-position: center;
     text-align: center;
     border-top: solid black 1px;
     border-top-style: groove;
@@ -187,6 +193,11 @@ footer {
     padding: 0px;
     margin: 0px;
     margin-bottom: 3px;
+
+    /* line length less than screen width */
+    width: 99%;
+    margin-left: 0.5%;
+    margin-right: 0.5%;
 }
 
 footer p {
