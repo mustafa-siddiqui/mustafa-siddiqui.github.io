@@ -147,3 +147,7 @@ h3 {
     /* Make it align with the title */
     margin-left: 48px;
 }
+
+* {
+    /* border: solid 1px red; */
+}
