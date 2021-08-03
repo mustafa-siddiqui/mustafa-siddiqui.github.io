@@ -20,16 +20,6 @@ body {
     background-color: #e6e6fa;
 }
 
-#landing-page {
-    width: calc(100% - 2px);
-    /* height: 100%; */
-    background-image: url('../images/background-photo.jpeg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    border: 1px solid gainsboro;
-    /* overflow: visible; */
-}
-
 h1 {
     font-family: 'News Cycle', sans-serif;
     font-size: 60px;
@@ -41,6 +31,24 @@ h1 {
 
 h3 {
     font-size: 30px;
+}
+
+p {
+    font-size: 20px;
+    line-height: 1.25;
+    letter-spacing: 1px;
+}
+
+#landing-page {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    height: 100vh;
+    width: 100%;
+
+    background: url('../images/background-photo.jpeg') center center / cover no-repeat;
 }
 
 #intro-text {
@@ -56,18 +64,12 @@ h3 {
     margin: 0;
     padding: 0.25%;
     overflow: hidden;
-    /* border: 1px solid #e7e7e7; */
     background-color: black;
-    position: sticky;
-    position: -webkit-sticky;
     top: 0;
 }
 
 .nav-bar li {
-    /* float: left; */
-    position: sticky;
-    position: -webkit-sticky;
-    top: 0;
+    float: left;
 }
 
 .nav-bar li a {
@@ -80,9 +82,6 @@ h3 {
     padding: 20px;
     border-radius: 3px;
     padding-top: 28px;
-    position: sticky;
-    position: -webkit-sticky;
-    top: 0;
 }
 
 .nav-bar a:hover {
@@ -91,9 +90,6 @@ h3 {
 }
 
 .nav-bar {
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
     width: 100%;
     display: inline;
 }
@@ -105,9 +101,6 @@ h3 {
     font-weight: lighter;
     padding: 0%;
     padding-left: 50px;
-    position: sticky;
-    position: -webkit-sticky;
-    top: 0em;
 }
 
 /* no viewable action when hovered over name */
@@ -115,29 +108,95 @@ h3 {
     background-color: transparent;
 }
 
+#home {
+    font-family: 'News Cycle', sans-serif;
+    text-align: center;
+    padding-top: 4%;
+    margin-top: 5%;
+}
+
 /* picture of myself */
 #me {
     object-position: left;
     width: 300px;
-    height: 300px;
-    /* border: double transparent; */
+    height: auto;
+    border: double transparent;
     border-radius: 50%;
-    margin: 20px 30px;
-    display: inline-block;
-}
-
-#about-me {
-    width: calc(100% - 30px);
-}
-
-#about-me-heading {
+    margin-left: 50px;
     margin-top: 50px;
 }
 
-p {
-    font-size: 20px;
-    line-height: 1.25;
-    letter-spacing: 1px;
+/* text beside picture */
+.text-beside-picture {
+    padding-left: 30%;
+    padding-right: 10%;
 }
 
+.click-links {
+    text-decoration: none;
+    color: inherit;
+}
 
+.click-links:hover {
+    color: gray;
+}
+
+#social-links {
+    width: 310px;
+    height: auto;
+    margin: 0px;
+    margin-left: 50px;
+    border-top: solid 1px black;
+}
+
+#social-links i {
+    object-position: center;
+    padding: 0 2.5px 0;
+    margin-left: 55px;
+    margin-top: 10px;
+}
+
+#social-links a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#social-links a:hover {
+    color: gray;
+}
+
+#work-with {
+    margin-top: 0px;
+    padding-top: 0px;
+}
+
+#non-work-interests a:hover {
+    text-transform: uppercase;
+}
+
+footer {
+    text-align: center;
+    border-top: solid black 1px;
+    border-top-style: groove;
+    border-top-color: rgb(70, 69, 69);
+    border-top-width: thin;
+    padding: 0px;
+    margin: 0px;
+    margin-bottom: 3px;
+}
+
+footer p {
+    margin-top: 2px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    font-size: 10px;
+    color: rgb(70, 69, 69);
+    letter-spacing: normal;
+}
+
+footer a {
+    text-decoration: none;
+    color: rgb(70, 69, 69);
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
