@@ -25,6 +25,17 @@ h3 {
     font-size: 30px;
 }
 
+p {
+    font-size: 20px;
+    line-height: 1.25;
+    letter-spacing: 1px;
+}
+
+#content {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
 /* top navigation bar */
 .nav-bar ul {
     list-style-type: none;
@@ -146,6 +157,14 @@ h3 {
 .container__desc {
     /* Make it align with the title */
     margin-left: 48px;
+}
+
+.timeline-header {
+    margin-left: 1em;
+}
+
+.timeline-text {
+    margin-left: 1em;
 }
 
 * {
