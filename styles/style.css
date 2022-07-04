@@ -1,183 +1,535 @@
-/*
-    @file   style.css
+/**
+ * @file    style.css
+ * @author  Mustafa Siddiqui
+ * @brief   CSS styling for personal website.
+ *          Style taken from: https://nicolasgallagher.com
+ */
 
-            Specify the stylistic components of the webpage using CSS.
-
-    @author Mustafa Siddiqui
-*/
-
-/* default for whole site */
 html {
-    font-size: 10px;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-weight: 200;
-    scroll-behavior: smooth;
+    color: #333;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
+    font-size: 18px;
+    line-height: 1.388888
 }
 
 body {
-    background-color: #e6e6fa;
-    margin-bottom: 0;
+    background: #fefef3;
+    margin: 0
+}
+
+a,
+a:visited {
+    color: #069;
+    text-decoration: none
+}
+
+a:active,
+a:focus,
+a:hover {
+    border: 0;
+    color: #fff;
+    background: #069;
+    outline: 0
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 2.5em;
+    line-height: 1.2;
+    margin: 0
+}
+
+h2,
+h3,
+h4,
+mark {
+    font-weight: 700
+}
+
+h1,
+h2,
+h3,
+h4 {
+    color: #222;
+    margin: 0 0 1.38888rem
+}
+
+h2,
+h3,
+h4 {
+    margin: 0 0 27px
+}
+
+h4 {
+    font-size: 1em
 }
 
 h2 {
-    font-size: 50px;
+    font-size: 1.55555em;
+    margin-top: 54px;
+    margin-top: 2.77777rem
 }
 
 h3 {
-    font-size: 30px;
+    font-size: 1.22222em
 }
 
-p {
-    font-size: 20px;
-    line-height: 1.25;
-    letter-spacing: 1px;
+abbr[title] {
+    border: 0
 }
 
-/* top navigation bar */
-.nav-bar ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0.25%;
-    padding-top: 10px;
-    overflow: hidden;
-    background-color: black;
+mark {
+    color: #000;
+    background-color: #fe6
 }
 
-.nav-bar li {
-    float: left;
-    position: sticky;
+abbr[title],
+ins {
+    text-decoration: none
 }
 
-.nav-bar li a {
+small {
+    font-size: .83333em
+}
+
+code,
+kbd,
+pre,
+samp {
+    font-family: consolas, monospace, x
+}
+
+pre {
+    overflow-x: auto;
+    padding: 1.25em !important;
+    border: 1px solid #e6e6e6;
+    border-left-width: 5px;
+    margin: 0 0 1.38888rem !important;
+    font-size: .88888em !important;
+    white-space: pre
+}
+
+code,
+kbd,
+samp {
+    font-size: 1em !important
+}
+
+pre code {
+    color: #444
+}
+
+a code {
+    color: inherit;
+    background: 0 0
+}
+
+blockquote {
+    padding: 0 10px 0 20px;
+    border-left: 5px solid #ddd;
+    color: #777
+}
+
+blockquote blockquote {
+    border: 0
+}
+
+ul {
+    list-style: square
+}
+
+blockquote,
+ol,
+p,
+ul {
+    margin: 0 0 1.38888em
+}
+
+ol,
+ul {
+    padding: 0
+}
+
+ol li,
+ul li {
+    padding: 0;
+    margin: 0 0 .7em
+}
+
+nav ol,
+nav ul {
+    list-style: none
+}
+
+.u-textTruncate {
+    max-width: 100%;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    white-space: nowrap !important;
+    word-wrap: normal !important
+}
+
+.u-hiddenVisually {
+    border: 0 !important;
+    clip: rect(1px, 1px, 1px, 1px) !important;
+    height: 1px !important;
+    overflow: hidden !important;
+    padding: 0 !important;
+    position: absolute !important;
+    width: 1px !important
+}
+
+@media screen and (max-width: 480px) {
+    html {
+        font-size: 16px
+    }
+
+    pre {
+        padding: .75em
+    }
+}
+
+@media screen and (min-width: 480px) {
+    blockquote {
+        margin-left: -25px
+    }
+
+    blockquote blockquote {
+        margin-left: 0
+    }
+}
+
+@media print {
+    * {
+        background: 0 0 !important;
+        color: #000 !important
+    }
+
+    a,
+    a:visited {
+        border: 0;
+        text-decoration: none
+    }
+
+    img {
+        max-width: 100% !important;
+        border: 0
+    }
+
+    blockquote,
+    img,
+    pre {
+        page-break-inside: avoid
+    }
+
+    h1,
+    h2,
+    h3 {
+        page-break-after: avoid
+    }
+
+    h2,
+    h3,
+    p {
+        orphans: 3;
+        widows: 3
+    }
+}
+
+.FlexEmbed {
     display: block;
-    color: rgb(240, 240, 240);
-    font-size: 20px;
-    text-align: center;
-    text-decoration: none;
-    padding: 20px;
-    border-radius: 3px;
+    overflow: hidden;
+    position: relative
 }
 
-.nav-bar a:hover {
-    background-color: rgba(163, 162, 162, 0.397);
-    color: white;
+.FlexEmbed:before {
+    content: "";
+    display: block;
+    width: 100%
 }
 
-.nav-bar {
-    position: fixed;
+.FlexEmbed--3by1:before {
+    padding-bottom: 33.33333%
+}
+
+.FlexEmbed--2by1:before {
+    padding-bottom: 50%
+}
+
+.FlexEmbed--16by9:before {
+    padding-bottom: 56.25%
+}
+
+.FlexEmbed--4by3:before {
+    padding-bottom: 75%
+}
+
+.FlexEmbed embed,
+.FlexEmbed iframe,
+.FlexEmbed object,
+.FlexEmbed-item {
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    position: absolute;
     top: 0;
-    left:0;
-    width: 100%;
-    display: inline;
-    border: none;
+    width: 100%
 }
 
-#name {
-    font-family: 'Dawning of a New Day', cursive;
-    font-size: 50px;
-    font-weight: lighter;
-    padding: 0%;
-    margin-left: 50px;
+.Container {
+    margin: 0 auto;
+    max-width: 620px;
+    padding: 0 20px;
+    position: relative
 }
 
-/* no viewable action when hovered over name */
-#name:hover {
-    background-color: transparent;
+@media screen and (max-width: 400px) {
+    .Container {
+        padding-left: 10px;
+        padding-right: 10px
+    }
 }
 
-#home {
-    font-family: 'News Cycle', sans-serif;
+.Content {
+    margin: 1.38888em 0
+}
+
+.Timestamp {
+    color: #757575;
+    display: inline-block;
+    font-size: .75em
+}
+
+.Article-header {
+    margin: 0 0 2em
+}
+
+.Article-body>p:first-child {
+    font-size: 1.22222em
+}
+
+.Article-data {
+    margin-bottom: 1.25em
+}
+
+.Article-timestamp {
+    font-size: .875em
+}
+
+.Article-coverImage {
+    background-color: #eee;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 1.5em auto 2.5em;
+    max-width: 2000px;
+    max-height: 1000px
+}
+
+.Article-coverImageCredit,
+.Article-coverImageCredit:active,
+.Article-coverImageCredit:focus,
+.Article-coverImageCredit:hover {
+    background-color: rgba(255, 255, 255, .7);
+    background-image: url(/static/external.svg);
+    background-position: center;
+    background-size: contain;
+    border-radius: 5px;
+    bottom: 1rem;
+    height: 24px;
+    position: absolute;
+    right: 1rem;
+    width: 28px
+}
+
+.Article-body img {
+    display: block;
+    max-width: 100%
+}
+
+.Article-body a {
+    text-decoration: underline;
+    text-decoration-skip: ink
+}
+
+.Article-body a:focus,
+.Article-body a:hover {
+    text-decoration: none
+}
+
+.Article-body figure {
+    margin: 0 0 1.5em
+}
+
+.Article-body figure figcaption {
+    font-size: .83333em;
+    line-height: 1.4;
+    margin-top: 9px;
+    margin-top: .5rem
+}
+
+.Article-body pre+p>small:first-child {
+    display: block;
+    margin: -1em 0 0;
+    font-size: .83333em
+}
+
+@media screen and (max-width: 580px) {
+
+    .Article-body ol,
+    .Article-body ul {
+        padding-left: 20px
+    }
+}
+
+@media screen and (max-width: 620px) {
+    .Article-body img {
+        width: 100%;
+        height: auto
+    }
+}
+
+.Article-responses {
+    margin-top: 4em
+}
+
+.Article-responses .twitter-timeline-rendered {
+    margin: 1em 0 0
+}
+
+@media print {
+    .Article-body a[href] {
+        text-decoration: none !important
+    }
+
+    .Article-body a[href]:after {
+        content: " (" attr(href) ")"
+    }
+}
+
+.Header {
+    padding: 1.38888em 0;
+    position: relative
+}
+
+.Header-logo {
+    display: block
+}
+
+.Header-logo a,
+.Header-prompt {
+    position: relative;
+    white-space: nowrap
+}
+
+.Header-logo a {
+    border: 0;
+    border-radius: 100%;
+    display: inline-block;
+    width: 50px;
+    margin: 0 auto;
+    vertical-align: top
+}
+
+.Header-prompt {
+    display: none;
+    vertical-align: middle;
+    padding: 5px;
+    border-radius: 3px;
+    background: #666;
+    background: rgba(0, 0, 0, .5);
+    margin-left: 15px;
+    color: #fff;
+    font-size: .8235em;
     text-align: center;
-    padding-top: 4%;
-    margin-top: 5%;
+    line-height: 1.2
 }
 
-/* picture of myself */
-#me {
-    object-position: left;
-    width: 300px;
-    height: auto;
-    border: double transparent;
-    border-radius: 50%;
-    margin-left: 50px;
-    margin-top: 50px;
+.Header-prompt:before {
+    content: "";
+    border-width: 5px 5px 5px 0;
+    border-style: solid;
+    border-color: transparent #666;
+    border-color: transparent rgba(0, 0, 0, .5);
+    position: absolute;
+    top: 50%;
+    left: -5px;
+    margin-top: -5px
 }
 
-/* text beside picture */
-.text-beside-picture {
-    padding-left: 30%;
-    padding-right: 10%;
+.Header-logo a:focus .Header-prompt,
+.Header-logo a:hover .Header-prompt {
+    display: inline-block
 }
 
-.click-links {
-    text-decoration: none;
-    color: inherit;
+.Header-logo a:active,
+.Header-logo a:focus,
+.Header-logo a:hover {
+    background: 0 0;
+    box-shadow: 0 0 0 5px #eee
 }
 
-.click-links:hover {
-    color: gray;
+.Header-logo img {
+    border-radius: 100%;
+    vertical-align: middle
 }
 
-#social-links {
-    width: 310px;
-    height: auto;
-    margin: 0px;
-    margin-left: 50px;
-    border-top: solid 1px black;
+.Footer {
+    margin-top: 3em;
+    color: #757575
 }
 
-#social-links i {
-    object-position: center;
-    padding: 0 2.5px 0;
-    margin-left: 55px;
-    margin-top: 10px;
+.HzLine {
+    background: #ddd;
+    height: 1px;
+    margin: 2.5em 0 1.38888em
 }
 
-#social-links a {
-    text-decoration: none;
-    color: inherit;
+.List {
+    list-style: none;
+    margin: 0;
+    padding: 0
 }
 
-#social-links a:hover {
-    color: gray;
+.List-item {
+    font-size: 1.1111em;
+    line-height: 1.2;
+    margin: 0 0 .75em;
+    padding: .75em 0 0
 }
 
-#work-with {
-    margin-top: 0px;
-    padding-top: 0px;
+.List-timestamp {
+    float: right;
+    margin: 0 0 0 20px
 }
 
-#non-work-interests a:hover {
-    text-transform: uppercase;
+@media screen and (max-width: 340px) {
+    .List-timestamp {
+        float: none;
+        display: block;
+        margin: 0
+    }
 }
 
-footer {
-    text-align: center;
-    border-top: solid black 1px;
-    border-top-style: groove;
-    border-top-color: rgb(70, 69, 69);
-    border-top-width: thin;
-    padding: 0px;
-    margin: 0px;
+.NotFound {
+    color: #555;
+    text-align: center
 }
 
-footer p {
-    margin-top: 2px;
-    padding-bottom: 0px;
-    margin-bottom: 0px;
-    font-size: 10px;
-    color: rgb(70, 69, 69);
-    letter-spacing: normal;
+.NotFound-title {
+    color: #ccc;
+    font-size: 1em;
+    font-weight: 700;
+    margin: 0 0 4em;
+    text-transform: uppercase
 }
 
-footer a {
-    text-decoration: none;
-    color: rgb(70, 69, 69);
-    padding-bottom: 0px;
-    margin-bottom: 0px;
+.NotFound-titleLarge {
+    display: block;
+    font-size: 6em
 }
 
-* {
-    border: solid 1px red;
-    border: solid 1px transparent
+.NotFound-titleSmall {
+    display: block;
+    font-size: 1.75em
 }

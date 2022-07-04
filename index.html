@@ -1,120 +1,232 @@
-<!------------------------------------
+<!-- 
+
 @file   index.html
-
-        Main page of the website.
-
 @author Mustafa Siddiqui
-------------------------------------->
-      
-<!--
-  Site Fonts:
-  https://fonts.google.com/specimen/Open+Sans+Condensed#standard-styles
-  https://fonts.google.com/specimen/News+Cycle?preview.text_type=custom#standard-styles
-  https://fonts.google.com/specimen/Dawning+of+a+New+Day
+@brief  Main (and only as of now) page of my personal website.
+        Design taken from: https://nicolasgallagher.com
+
 -->
 
-<!DOCTYPE html>
-<html>
-  <!-- Meta Data -->
-  <head>
+<!doctype html>
+<html lang="en">
     <meta charset="utf-8">
-    <title>Mustafa's Portfolio</title>
-    <link rel="stylesheet" href="styles/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&family=News+Cycle&family=Dawning+of+a+New+Day&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
-  </head>
-  
-  <!-- Site Content -->
-  <body>
+    <head>
+        <!-- meta data -->
+        <title>Mustafa's site</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <meta name="theme-color" content="">
+        <meta property="og:title" content="Mustafa's site">
+        <meta property="og:image"
+            content="https://github.com/mustafa-siddiqui/mustafa-siddiqui.github.io/blob/main/images/myself/image-resized.jpg">
 
-    <!-- Top Navigation Bar -->
-    <!--
-    <div>
-      <header class="nav-bar">
-          <ul>
-            <li><a href="#home" id="name"> Mustafa Siddiqui </a></li>
-            // below are in reverse order due to right-alignment 
-            <li style="float: right;"><a href="#contact-me"> Contact Me </a></li>
-            <li style="float: right;"><a href="#resume"> Resume </a></li>
-            <li style="float: right;"><a href="#projects"> My Projects </a></li>
-            <li style="float: right;"><a href="#work-experience"> Work Experience </a></li>
-          </ul>
-      </header>
-    </div>
-    -->
-    <div>
-      <header class="nav-bar">
-          <ul>
-            <li><a href="#home" id="name"> Mustafa Siddiqui </a></li>
-            <!-- below are in reverse order due to right-alignment -->
-            <li style="float: right;"><a href="./temp.html"> Contact Me </a></li>
-            <li style="float: right;"><a href="./temp.html"> Resume </a></li>
-            <li style="float: right;"><a href="./temp.html"> My Projects </a></li>
-            <li style="float: right;"><a href="./temp.html"> Work Experience </a></li>
-          </ul>
-      </header>
-    </div>
+        <!-- favicon -->
+        <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+        <link rel="manifest" href="images/site.webmanifest">
+        <link rel="mask-icon" href="images/safari-pinned-tab.svg" color="#5bbad5">
+        <link rel="shortcut icon" href="images/favicon.ico">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="msapplication-config" content="images/browserconfig.xml">
+        <meta name="theme-color" content="#ffffff">
 
-    <!--  Start of Body -->
-    <div>
-      <!-- hi with hand-wave emoji -->
-      <h2 id="home"> Hi, I'm Mustafa &#128075; </h2>
+        <!-- style sheet -->
+        <link rel="stylesheet" href="styles/style.css">
+        <link rel="stylesheet" media="(prefers-color-scheme:light)"
+            href="https://unpkg.com/prismjs@1.20.0/themes/prism.css">
+        <link rel="stylesheet" media="(prefers-color-scheme:dark)"
+            href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css">
+    </head>
 
-      <p style="float: left;"><img id='me' src='./images/resized.jpg' alt='picture of me'></p>
+    <!-- header -->
+    <header class="Header" role="banner">
+        <div class="Container">
+            <div class="Header-logo">
+                <img src="images/myself/new-resized.jpg" width="100" height="100" alt="">
+            </div>
+        </div>
+    </header>
 
-      <!-- About Me -->
-      <div class="text-beside-picture">
-        <h3> About Me </h3>
-        <p>
-          I am currently a senior at the <a class="click-links" href="https://www.rochester.edu" target="_blank">University of Rochester</a>. 
-          I am pursuing my undergraduate degree in electrical and computer engineering. I started exploring the world of embedded systems a year ago 
-          and am fascinated by it. The intersection of hardware and software intrigues me. With a deep love of solving problems and building stuff, 
-          I hope to contribute to the world in a meaningful way.
+    <!-- body -->
+    <main class="Content">
+        <section class="Container">
+            <header class="Article-header">
+                <h1>Hi, I'm Mustafa 👋 </h1>
+            </header>
 
-          <br><br>
-          This summer (2021), I interned at <a class="click-links" href="https://www.extremenetworks.com/company/" target="_blank">Extreme Networks</a> 
-          in San Jose, CA as a systems engineering intern. My work involved working with networking protocols, linux kernel, network security, and general 
-          programming fundamentals. It was my first time working with a huge code base, and while it was certainly challenging, I really enjoyed the 
-          experience!
-          </br></br>
-        </p>
-      </div>
+            <!-- intro -->
+            <div class="Article-body">
+                <p>
+                    I am an embedded software engineer @ 
+                    <a href="https://www.lutron.com/en-US/pages/default.aspx" target="_blank"
+                    rel="noopener noreferrer">Lutron Electronics</a>
+                    based in Philadelphia, PA. I recently graduated from the 
+                    <a href="https://www.rochester.edu" target="_blank"
+                    rel="noopener noreferrer">University of Rochester</a>
+                    majoring in Electrical and Computer Engineering (class of '22 🙌).
+                    
+                    <br><br>
+                    
+                    During my undergrad, I fell in love with the intersection of software
+                    and hardware -- which led me to pursue the field of embedded systems. 
+                    With a deep love of solving problems and building stuff, I hope to 
+                    contribute to the world in a meaningful way.
+                </p>
+            </div>
 
-      <!-- Links to profiles -->
-      <div id="social-links">
-        <a href="https://github.com/mustafa-siddiqui" target="_blank"><i class="fa fa-github fa-2x"></i></a>
-        <a href="https://www.linkedin.com/in/-mustafasiddiqui/" target="_blank"><i class="fa fa-linkedin fa-2x"></i></a>
-        <a href="https://medium.com/@must.afa" target="_blank"><i class="fa fa-medium fa-2x"></i></a>
-      </div>
+            <!-- current work -->
+            <h2>What I'm working on currently</h2>
+            <div class="Article-body">
+                <p>
+                    At Lutron, I'm part of the team that works on their processors. They
+                    control all the information flow and control to the lighting equipment
+                    in the network. I work with C++/C/Python primarily and in the domain
+                    of embedded linux and microcontroller development.
+                    
+                    <br><br>
 
-      <!-- What I work with -->
-      <div class="text-beside-picture" id="work-with">
-        <h3> What I work with </h3>
-        <p>
-          Technologies that I work with on the regular include communication protocols, device drivers, system integration, operating 
-          systems and more!
-          <br><br>It involves concepts of both electrical/computer engineering and computer science fundamentals. That is why I enjoy the field
-          of embedded software - it is an intersection of hardware and software.</br></br>
-          Tech stack would generally include C, C++, Python, Matlab, Version Control Software (Git, Perforce), Make etc.
-        </p>
-      </div>
+                    On the side, I'm looking on getting myself into higher level code and
+                    enter the world of open source development. 
+                    <a href="https://www.linkedin.com/in/-mustafasiddiqui/" 
+                    target="_blank" rel="noopener noreferrer">Hmu</a> 
+                    if you'd like to collab on a project!
+                </p>
+            </div>
 
-      <!-- What I enjoy outside of work -->
-      <div class="text-beside-picture" id="non-work-interests">
-        <h3> What I enjoy outside of work </h3>
-        <p>
-          I love to explore new cities and landscapes, big fan of road trips, I love cooking and trying out new cuisines. I enjoy watching sports - 
-          soccer fan here. I also like to read fiction. Since the start of quarantine, I have been playing chess and would love to play a game. 
-          <a class="click-links" href="https://lichess.org/@/mustafa-siddiqui" target="_blank">Challenge me!</a><br></br><br></br>
-        </p>
-      </div>
-    </div>
+            <!-- past experience -->
+            <h2>My experience</h2>
+            <div class="Article-body">
+                <ul class="List">
+                    <li class="List-item">
+                        <div class="List-timestamp">
+                            <time class="Timestamp" datetime="June 2021 - August 2021">June 2021 - August 2021</time>
+                        </div>
+                        <div class="List-text u-textTruncate">
+                            <a href="https://www.extremenetworks.com" target="_blank" 
+                            rel="noopener noreferrer">Extreme Networks</a>
+                            <p><i>Systems Engineering Intern</i></p>
+                        </div>
+                        <p>
+                            I was part of the OS team and worked on the OS that runs on the Access Point
+                            devices developed by the company. I implemented a network security module for
+                            a class of legacy devices still used by 20k+ customers enabling them to gain
+                            access to this feature and secure their networks. I mainly worked in C and
+                            got to design architecture for some software processes as well.
+                        </p>
+                    </li>
+                    <li class="List-item">
+                        <div class="List-timestamp">
+                            <time class="Timestamp" datetime="July 2020 - August 2020">July 2020 - August 2020</time>
+                        </div>
+                        <div class="List-text u-textTruncate">
+                            <a href="https://percussionwelder.com" target="_blank" 
+                            rel="noopener noreferrer">Percussion Welder</a>
+                            <p><i>Software Engineering Intern</i></p>
+                        </div>
+                        <p>
+                            This was my first internship since I started college. It was during the summer
+                            after my sophomore year -- which was also the year when covid hit and everything went
+                            remote. I worked with signal processing techniques and developed a tool to detect
+                            the start and end times of a weld process carried out by the percussion welder. I worked
+                            in Python and implemented multiple strategies including short-term fourier analysis, 
+                            digital filters, data-trimming methods etc.
+                        </p>
+                    </li>
+                    <li class="List-item">
+                        <div class="List-timestamp">
+                            <time class="Timestamp" datetime="January 2019 - May 2022">January 2019 - May 2022</time>
+                        </div>
+                        <div class="List-text u-textTruncate">
+                            <a href="https://www.rochester.edu" target="_blank" 
+                            rel="noopener noreferrer">University of Rochester</a>
+                            <p><i>Teaching Assistant</i></p>
+                        </div>
+                        <p>
+                            I have been a teaching assistant since my freshman year of college. I have TA'd courses
+                            including C/C++ programming, signals & systems, and circuits & signals. During this time,
+                            I have designed assignments and lead lab sessions for 40+ students. It was a great experience
+                            that I'm glad I got to have. I found that I learned something new about a course everytime
+                            I TA'd it.
+                        </p>
+                    </li>
+                </ul>
+            </div>
 
-    <!-- Footer -->
-    <footer>
-      <p>&#x00A9; designed & created by <a href="https://www.instagram.com/mustafaasiddiqui" target="_blank">mustafa</a> :)</p>
-    </footer>
+            <!-- projects -->
+            <h2>My projects</h2>
+            <div class="Article-body">
+                <ul class="List">
+                    <li class="List-item">
+                        <div class="List-timestamp">
+                            <time class="Timestamp" datetime="February 2022 - April 2022">February 2022 - April 2022</time>
+                        </div>
+                        <div class="List-text u-textTruncate">
+                            <a href="https://github.com/mustafa-siddiqui/sun-tracking-pv-system" target="_blank"
+                            rel="noopener noreferrer">Sun Tracking PV System</a>
+                        </div>
+                    </li>
+                    <li class="List-item">
+                        <div class="List-timestamp">
+                            <time class="Timestamp" datetime="November 2021">November 2021</time>
+                        </div>
+                        <div class="List-text u-textTruncate">
+                            <a href="https://github.com/mustafa-siddiqui/cartoonize-image" target="_blank"
+                            rel="noopener noreferrer">Image to Cartoon Converter</a>
+                        </div>
+                    </li>
+                    <li class="List-item">
+                        <div class="List-timestamp">
+                            <time class="Timestamp" datetime="May 2021">May 2021</time>
+                        </div>
+                        <div class="List-text u-textTruncate">
+                            <a href="https://github.com/mustafa-siddiqui/street-mapping" target="_blank"
+                            rel="noopener noreferrer">Street Mapping</a>
+                        </div>
+                    </li>
+                    <li class="List-item">
+                        <div class="List-timestamp">
+                            <time class="Timestamp" datetime="April 2021">April 2021</time>
+                        </div>
+                        <div class="List-text u-textTruncate">
+                            <a href="https://github.com/mustafa-siddiqui/huffman-compression" target="_blank"
+                            rel="noopener noreferrer">Huffman Compression</a>
+                        </div>
+                    </li>
+                </ul>
+                <p>
+                    <br>
 
-  </body>
+                    More projects are on my 
+                    <a href="https://github.com/mustafa-siddiqui" target="_blank"
+                    rel="noopener noreferrer">GitHub profile</a>
+                    !
+                </p>
+            </div>
+
+            <!-- resume -->
+            <h2>My resume</h2>
+            View my 
+            <a href="https://drive.google.com/file/d/1GlWnWAdCZQsBXOMePXjhp50StDV-2Xv_/view?usp=sharing"
+            target="_blank" rel="noopener noreferrer">resume</a>
+            that got me my full-time job!
+
+        </section>
+
+        <!-- footer -->
+        <footer class="Footer" role="contentinfo">
+            <div class="Container">
+                <div class="HzLine"></div>
+                <p>
+                    <small>
+                        Feel free to reach out to me on
+                        <a href="https://www.linkedin.com/in/-mustafasiddiqui/" target="_blank"
+                            rel="noopener noreferrer">LinkedIn</a>
+                        :)
+                    </small>
+                </p>
+            </div>
+        </footer>
+    </main>
+
 </html>
