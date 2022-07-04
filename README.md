@@ -1,5 +1,3 @@
-# Personal Portfolio
+# Personal Site
 
-A try at making a portfolio website.
-
-=> NOT COMPLETE <=
+Source code for my personal website that is somewhat of a portfolio as well.
