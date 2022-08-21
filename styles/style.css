@@ -17,6 +17,10 @@ body {
     margin: 0
 }
 
+* {
+    cursor: [images/icons8-circled-48.png], auto;
+}
+
 a,
 a:visited {
     color: #069;

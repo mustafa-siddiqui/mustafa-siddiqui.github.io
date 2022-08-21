@@ -1,5 +1,5 @@
-# Personal Portfolio
+# Personal Site
 
-A try at making a portfolio website.
+Source code for my personal website that is somewhat of a portfolio as well.
 
-=> NOT COMPLETE <=
+View it at: [https://mustafa-siddiqui.github.io/](https://mustafa-siddiqui.github.io/)
