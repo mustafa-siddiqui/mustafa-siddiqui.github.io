@@ -18,7 +18,7 @@ body {
 }
 
 * {
-    cursor: [images/icons8-circled-48.png], auto;
+    cursor: url("https://github.com/mustafa-siddiqui/mustafa-siddiqui.github.io/blob/main/images/icons8-circled-48.png") , auto;
 }
 
 a,
