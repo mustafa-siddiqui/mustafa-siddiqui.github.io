@@ -539,8 +539,15 @@ nav ul {
 
 /* --- */
 
-.card {
+.card-enclosure {
     background-color: #d9d9fc;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.card {
+    background-color: #c4c4fc;
     border-radius: 10px;
     padding: 20px;
     margin-bottom: 20px;
