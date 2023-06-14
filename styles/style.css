@@ -38,7 +38,9 @@ h1 {
     font-weight: 700;
     font-size: 2.5em;
     line-height: 1.2;
-    margin: 0
+    margin: 0;
+    margin-top: 2rem;
+    color: #222;
 }
 
 h2,
@@ -48,7 +50,7 @@ mark {
     font-weight: 700
 }
 
-h1,
+/* h1, */
 h2,
 h3,
 h4 {
@@ -474,6 +476,10 @@ nav ul {
 .Header-logo img {
     border-radius: 100%;
     vertical-align: middle
+}
+
+.Header-logo img:hover {
+    box-shadow: 0 0 0 5px #c4c4fc;
 }
 
 .Footer {
