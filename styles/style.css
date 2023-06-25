@@ -2,7 +2,7 @@
  * @file    style.css
  * @author  Mustafa Siddiqui
  * @brief   CSS styling for personal website.
- *          Style taken from: https://nicolasgallagher.com
+ *          Inspired by: https://nicolasgallagher.com
  */
 
 :root {
@@ -34,18 +34,15 @@ body {
 
 a,
 a:visited {
-    color: var(--blue);
-    text-decoration: none
+    text-decoration: none;
+    color: var(--light-grey);
 }
 
 a:active,
 a:focus,
 a:hover {
-    border: 0;
-    border-radius: 3px;
-    color: #fff;
-    background: var(--blue);
-    outline: 0
+    text-decoration: none;
+    color: var(--light-grey);
 }
 
 h1 {
@@ -179,24 +176,6 @@ nav ul {
     list-style: none
 }
 
-.u-textTruncate {
-    max-width: 100%;
-    overflow: hidden !important;
-    text-overflow: ellipsis !important;
-    white-space: nowrap !important;
-    word-wrap: normal !important
-}
-
-.u-hiddenVisually {
-    border: 0 !important;
-    clip: rect(1px, 1px, 1px, 1px) !important;
-    height: 1px !important;
-    overflow: hidden !important;
-    padding: 0 !important;
-    position: absolute !important;
-    width: 1px !important
-}
-
 @media screen and (max-width: 480px) {
     html {
         font-size: 16px
@@ -254,46 +233,6 @@ nav ul {
     }
 }
 
-.FlexEmbed {
-    display: block;
-    overflow: hidden;
-    position: relative
-}
-
-.FlexEmbed:before {
-    content: "";
-    display: block;
-    width: 100%
-}
-
-.FlexEmbed--3by1:before {
-    padding-bottom: 33.33333%
-}
-
-.FlexEmbed--2by1:before {
-    padding-bottom: 50%
-}
-
-.FlexEmbed--16by9:before {
-    padding-bottom: 56.25%
-}
-
-.FlexEmbed--4by3:before {
-    padding-bottom: 75%
-}
-
-.FlexEmbed embed,
-.FlexEmbed iframe,
-.FlexEmbed object,
-.FlexEmbed-item {
-    bottom: 0;
-    height: 100%;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 100%
-}
-
 .Container {
     margin: 0 auto;
     max-width: 720px;
@@ -326,40 +265,6 @@ nav ul {
     font-size: 1.22222em
 }
 
-.Article-data {
-    margin-bottom: 1.25em
-}
-
-.Article-timestamp {
-    font-size: .875em
-}
-
-.Article-coverImage {
-    background-color: #eee;
-    background-position: 50%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin: 1.5em auto 2.5em;
-    max-width: 2000px;
-    max-height: 1000px
-}
-
-.Article-coverImageCredit,
-.Article-coverImageCredit:active,
-.Article-coverImageCredit:focus,
-.Article-coverImageCredit:hover {
-    background-color: rgba(255, 255, 255, .7);
-    background-image: url(/static/external.svg);
-    background-position: center;
-    background-size: contain;
-    border-radius: 5px;
-    bottom: 1rem;
-    height: 24px;
-    position: absolute;
-    right: 1rem;
-    width: 28px
-}
-
 .Article-body img {
     display: block;
     max-width: 100%
@@ -367,52 +272,18 @@ nav ul {
 
 .Article-body a {
     text-decoration: underline;
-    text-decoration-skip: ink
+    text-decoration-skip: ink;
+    color: var(--blue);
 }
 
 .Article-body a:focus,
 .Article-body a:hover {
-    text-decoration: none
-}
-
-.Article-body figure {
-    margin: 0 0 1.5em
-}
-
-.Article-body figure figcaption {
-    font-size: .83333em;
-    line-height: 1.4;
-    margin-top: 9px;
-    margin-top: .5rem
-}
-
-.Article-body pre+p>small:first-child {
-    display: block;
-    margin: -1em 0 0;
-    font-size: .83333em
-}
-
-@media screen and (max-width: 580px) {
-
-    .Article-body ol,
-    .Article-body ul {
-        padding-left: 20px
-    }
-}
-
-@media screen and (max-width: 620px) {
-    .Article-body img {
-        width: 100%;
-        height: auto
-    }
-}
-
-.Article-responses {
-    margin-top: 4em
-}
-
-.Article-responses .twitter-timeline-rendered {
-    margin: 1em 0 0
+    text-decoration: none;
+    border: 0;
+    border-radius: 3px;
+    color: #fff;
+    background: var(--blue);
+    outline: 0
 }
 
 @media print {
@@ -427,11 +298,20 @@ nav ul {
 
 .Header {
     padding: 1.38888em 0;
-    position: relative
+    /* Make header sticky for laptop screens and bigger */
+    @media ((min-width: 1025px) and (max-width: 1280px)) or (min-width: 1281px) {
+        position: sticky;
+        position: -webkit-sticky;
+    }
+    top: 0;
+    z-index: 10;
 }
 
 .Header-logo {
-    display: block
+    display: block;
+    padding: 1.38888em 0 0 1.38888em;
+    top: 0;
+    z-index: 10;
 }
 
 .Header-logo a,
@@ -490,6 +370,11 @@ nav ul {
 .Header-logo img {
     border-radius: 100%;
     vertical-align: middle;
+    /* Move image to the left for laptop screens and bigger */
+    @media ((min-width: 1025px) and (max-width: 1280px)) or (min-width: 1281px) {
+        margin-left: -30%;  
+        float: left; 
+    }
 }
 
 .Header-logo img:hover {
@@ -520,6 +405,16 @@ nav ul {
     margin: 2.5em 0 1.38888em
 }
 
+.Copyright {
+    font-size: xx-small;
+    color: var(--light-grey);
+    text-align: center;
+    /* Move to right for laptop screens and bigger */
+    @media ((min-width: 1025px) and (max-width: 1280px)) or (min-width: 1281px) {
+        text-align: right;
+    }
+}
+
 .List {
     list-style: none;
     margin: 0;
@@ -545,31 +440,6 @@ nav ul {
         margin: 0
     }
 }
-
-.NotFound {
-    color: #555;
-    text-align: center
-}
-
-.NotFound-title {
-    color: #ccc;
-    font-size: 1em;
-    font-weight: 700;
-    margin: 0 0 4em;
-    text-transform: uppercase
-}
-
-.NotFound-titleLarge {
-    display: block;
-    font-size: 6em
-}
-
-.NotFound-titleSmall {
-    display: block;
-    font-size: 1.75em
-}
-
-/* --- */
 
 .card-enclosure {
     background-color: var(--dark-lavender);
