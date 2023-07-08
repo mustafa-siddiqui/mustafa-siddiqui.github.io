@@ -274,16 +274,20 @@ nav ul {
     text-decoration: underline;
     text-decoration-skip: ink;
     color: var(--blue);
+    padding-left: 2px;
+    padding-right: 2px;
 }
 
 .Article-body a:focus,
 .Article-body a:hover {
     text-decoration: none;
     border: 0;
-    border-radius: 3px;
+    border-radius: 5px;
     color: #fff;
     background: var(--blue);
-    outline: 0
+    outline: 0;
+    padding-left: 2px;
+    padding-right: 2px;
 }
 
 @media print {
@@ -372,6 +376,7 @@ nav ul {
     vertical-align: middle;
     /* Move image to the left for laptop screens and bigger */
     @media ((min-width: 1025px) and (max-width: 1280px)) or (min-width: 1281px) {
+        margin-top: 7.2%;
         margin-left: -30%;  
         float: left; 
     }
@@ -408,11 +413,28 @@ nav ul {
 .Copyright {
     font-size: xx-small;
     color: var(--light-grey);
-    text-align: center;
-    /* Move to right for laptop screens and bigger */
-    @media ((min-width: 1025px) and (max-width: 1280px)) or (min-width: 1281px) {
-        text-align: right;
-    }
+    text-align: right;
+}
+
+.Icons a {
+    text-decoration: underline;
+    text-decoration-skip: ink;
+    color: var(--grey);
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+.Icons a:focus,
+.Icons a:hover {
+    text-decoration: none;
+    border: 0;
+    border-radius: 5px;
+    color: #ffff;
+    background: var(--grey);
+    outline: 0;
+    padding-left: 2px;
+    padding-right: 2px;
+    padding-bottom: 1px;
 }
 
 .List {
@@ -443,14 +465,14 @@ nav ul {
 
 .card-enclosure {
     background-color: var(--dark-lavender);
-    border-radius: 10px;
+    border-radius: 18px;
     padding: 20px;
     margin-bottom: 30px;
 }
 
 .card {
     background-color: var(--lavender);
-    border-radius: 10px;
+    border-radius: 18px;
     padding: 20px;
     margin-bottom: 20px;
 }
