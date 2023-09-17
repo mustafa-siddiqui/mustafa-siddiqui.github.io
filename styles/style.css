@@ -28,7 +28,7 @@ html {
 }
 
 body {
-    background: var(--light-lavender);
+    background: ghostwhite;
     margin: 0
 }
 
@@ -475,7 +475,7 @@ nav ul {
 }
 
 .card {
-    background-color: var(--lavender);
+    background-color: var(--light-lavender);
     border-radius: 28px;
     padding: 20px;
     margin-bottom: 20px;
