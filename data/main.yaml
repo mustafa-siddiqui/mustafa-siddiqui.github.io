@@ -1,0 +1,107 @@
+#
+# @file        main.yaml
+# @brief       Data file for text to be displayed on the main landing page.
+# @author      Mustafa Siddiqui
+# @copyright   (c) 2025
+#
+
+name: "Mustafa Siddiqui"
+image: "images/myself/new-resized.jpg"
+
+social:
+  - platform: "instagram"
+    link: "https://www.instagram.com/mustafaasiddiqui"
+    copyright: true
+  - platform: "linkedin"
+    link: "https://www.linkedin.com/in/-mustafasiddiqui/"
+  - platform: "github"
+    link: "https://github.com/mustafa-siddiqui"
+  - platform: "stack-overflow"
+    link: "https://stackoverflow.com/users/13360254/mustafa"
+
+sections:
+  - type: prose
+    body: |
+      I am an embedded software engineer @
+      <a href="https://www.lutron.com/en-US/pages/default.aspx" target="_blank"
+      rel="noopener noreferrer">Lutron Electronics</a>
+      based in Philadelphia. I graduated from the
+      <a href="https://www.rochester.edu" target="_blank"
+      rel="noopener noreferrer">University of Rochester</a>
+      majoring in Electrical and Computer Engineering.
+
+      <br><br>
+
+      During my undergrad, I fell in love with the intersection of software
+      and hardware – which led me to pursue the field of embedded systems.
+      With a deep love of solving problems and building stuff, I hope to
+      contribute to the world in a meaningful way.
+
+  - type: prose
+    heading: "What I'm working on currently"
+    body: |
+      At Lutron, I'm part of the team that works on their processors that
+      serve as the brain of the lighting system. I work with C++, C, Python,
+      Golang, and Bash on multiple components primarily in the domain of
+      embedded linux and microcontroller development.
+
+  - type: timeline
+    heading: "My experience"
+    items:
+      - title: "Embedded Software Engineer"
+        company: "Lutron Electronics"
+        companyLink: "https://www.lutron.com"
+        date: "June 2022 - Present"
+        description: |
+          Building high quality lighting products that <i>just work</i>.
+      - title: "Systems Engineering Intern"
+        company: "Extreme Networks"
+        companyLink: "https://www.extremenetworks.com"
+        date: "June 2021 - August 2021"
+        description: |
+          I was part of the OS team and worked on the OS that runs on the Access Point
+          devices developed by the company. I implemented a network security module for
+          a class of legacy devices still used by 20k+ customers enabling them to gain
+          access to this feature and secure their networks. I mainly worked in C and
+          got to design architecture for some software processes as well.
+      - title: "Software Engineering Intern"
+        company: "Percussion Welder"
+        companyLink: "https://percussionwelder.com"
+        date: "July 2020 - August 2020"
+        description: |
+          This was my first internship since I started college. It was during the summer
+          after my sophomore year – which was also the year when covid hit and everything went
+          remote. I worked with signal processing techniques and developed a tool to detect
+          the start and end times of a weld process carried out by the percussion welder. I worked
+          in Python and implemented multiple strategies including short-term fourier analysis,
+          digital filters, data-trimming methods etc.
+      - title: "Teaching Assistant"
+        company: "University of Rochester"
+        companyLink: "https://www.rochester.edu"
+        date: "January 2019 - May 2022"
+        description: |
+          I have been a teaching assistant since my freshman year of college. I TA'd courses
+          including C/C++ programming, signals & systems, and circuits & signals. During this time,
+          I designed assignments and lead lab sessions for 40+ students. It was a great experience
+          that I'm glad I got to have. I found that I learned something new about a course everytime
+          I TA'd it.
+
+  - type: link-list
+    heading: "My projects"
+    items:
+      - title: "Sun Tracking Photovoltaic System"
+        date: "February 2022 - April 2022"
+        link: "https://github.com/mustafa-siddiqui/sun-tracking-pv-system"
+      - title: "Image Animator"
+        date: "November 2021"
+        link: "https://github.com/mustafa-siddiqui/cartoonize-image"
+      - title: "Street Mapping"
+        date: "May 2021"
+        link: "https://github.com/mustafa-siddiqui/street-mapping"
+      - title: "Huffman Compression"
+        date: "April 2021"
+        link: "https://github.com/mustafa-siddiqui/huffman-compression"
+    sectionFooter: |
+      Interested in more? Explore my
+      <a href="https://github.com/mustafa-siddiqui?tab=repositories" target="_blank"
+      rel="noopener noreferrer">code repositories</a>.
